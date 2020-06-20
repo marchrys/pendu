@@ -7,11 +7,29 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" >
 
     <title>Hello, world!</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <div class="container">
+        <h1>Jeu de pendu</h1>
+        <div class="row justify-content-center">
+            <img alt="image pendu" id="hangman-img">
+        </div>
+        <div class="row justify-content-center mt-4 h2" id="word">
+           
+        </div>
+        <div class="row justify-content-center mt-4" id="answers-container">
+           
+        </div>
+        <div id="game-over-cont">
+            <p class="text-center" id="game-over-message"></p>
+            <div class="row justify-content-center">
+              <button type="button" class="btn btn-primary" id="play-button">Rejouer</button>
+            </div>
+        </div>
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
