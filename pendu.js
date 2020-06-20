@@ -1,6 +1,6 @@
-var words = ['diese', 'bemol', 'becarre', 'tonalite', 'gamme', 'intervalle'];
+var words = ['dièse', 'bémol', 'bécarre', 'tonalité', 'gamme', 'intervalle'];
 
-var alphabet = 'A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z';
+var alphabet = 'A,B,C,D,E,&Eacute;,&Egrave;,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z';
 var alphabetArr = alphabet.split(',');
 
 var word = '';
@@ -75,7 +75,6 @@ function initGame(){
 
     word = words[Math.floor(Math.random() * words.length)];
     word = word.toUpperCase();
-    alert(word);
 
     remLetters = word.length;
 
